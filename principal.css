@@ -1,0 +1,116 @@
+:root {
+    --fundo: #223240;
+    --texto: #93D94E;
+    --borda: #60BF81;
+    --botao: #347355;
+    --texto2: #347355;
+}
+
+body {
+    background-color: var(--fundo);
+}
+h1 {
+    color: var(--texto);
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    margin-top: 0px;
+    color: var(--botao);
+}
+.myButton {
+	background-color:#3B8C66;
+	border-radius:16px;
+	border:1px solid #37744c;
+	display:inline-block;
+	cursor:pointer;
+	color:var(--texto);
+	font-family:Arial;
+	font-size:17px;
+	padding:4px 6px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#307454;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.botaocalcular {
+    margin-top: 0px;
+}
+
+div {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 20px;
+    top: 30%;
+    border-color: var(--borda);
+}
+#esfera {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.divcentro {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 300px;
+}
+
+.divcentropiramide {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 250px;
+}
+
+#piramide {
+    position: absolute;
+    left: 29%;
+    transform: translate(-50%, -50%);
+}
+
+#triangulo {
+    position: absolute;
+    left: 71%;
+    transform: translate(-50%, -50%);
+}
+
+form, label {
+    text-align: center;
+    color: var(--texto2);
+    border-radius: 5px;
+    font-size: x-large;
+}
+
+input {
+    text-align: center;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 2px;
+    font-size: x-large;
+    
+}
+
+p {
+    text-align: center;
+    color: var(--texto);
+    font-size: x-large;
+}

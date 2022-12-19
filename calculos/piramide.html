@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\principal.css">
+    <title>Volume da piramide</title>
+</head>
+<body>
+    <script>
+        function volumepiramide (){
+            var lado = document.getElementById("lado").value;
+            var altura = document.getElementById("altura").value;
+            
+            var area = lado * lado
+            var calculo = altura * area / 3
+            var volume = calculo.toFixed(1)
+
+            document.getElementById("resultado").innerHTML = "Resultado: " + volume
+        }
+    </script>
+
+    <div class="divcentropiramide">
+        <h1>Calcule o volume da piramide!</h1>
+        <form>
+            <label for="lado">Lado:</label>
+            <input type="number" id="lado" name="lado" value="0">
+            <label for="altura">Altura:</label>
+            <input type="number" id="altura" name="altura" value="0"><br>
+            <br>
+        </form>
+        <button id="botaocalcular" class="myButton" onclick="volumepiramide()">Calcular volume</button>
+        <p id="resultado"></p>
+    </div>
+    <a href="..\index.html" class="myButton"> < Voltar para página inicial</a>
+
+</body>
+</html>

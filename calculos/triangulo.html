@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\principal.css">
+    <title>Area do triangulo</title>
+</head>
+<body>
+    <script>
+        function areatriangulo(){
+            let base = document.getElementById("base").value;
+            let altura = document.getElementById("altura").value;
+            
+            let area = base * altura / 2
+            document.getElementById("resultado").innerHTML = "Resultado: " + area
+        }
+    </script>
+    
+    <div class="divcentropiramide">
+        <h1>Calcule a area do triangulo!</h1>
+        <form>
+            <label for="base">Base:</label>
+            <input type="number" id="base" name="base" value="0">
+            <label for="altura">Altura:</label>
+            <input type="number" id="altura" name="altura" value="0">
+            <br>
+        </form>
+        <button style="margin-top: 20px;" id="botaocalcular" class="myButton" onclick="areatriangulo()">Calcular area</button>
+        <p id="resultado"></p>
+    </div>
+    <a href="..\index.html" class="myButton"> < Voltar para página inicial</a>
+</body>
+</html>
